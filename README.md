@@ -79,7 +79,6 @@ The frontend will be available at http://localhost:3000/.
 Since the repositories are separate, the structure will be as follows:
 
 ```bash
-Copy code
 charts-dashboard/        # GitHub repository for the frontend (Next.js)
 ├── package.json
 ├── pages/
