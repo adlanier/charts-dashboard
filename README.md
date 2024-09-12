@@ -1,85 +1,95 @@
 # Charts Dashboard
 
-A responsive charts dashboard built using **Next.js** (frontend) and **Django** (backend API), featuring multiple chart types: Line Chart, Bar Chart, Pie Chart, and Candlestick Chart. The dashboard integrates with hardcoded data from a Django API and is fully customizable with a dark mode toggle.
+A responsive charts dashboard built using Next.js (frontend) and Django (backend API), featuring multiple chart types: Line Chart, Bar Chart, Pie Chart, and Candlestick Chart. The dashboard integrates with hardcoded data from a Django API and is fully customizable with a dark mode toggle.
 
 ## Features
+Line Chart, Bar Chart, Pie Chart (via Chart.js)
+Candlestick Chart (via ApexCharts)
+Dark mode toggle
+Tooltips and hover effects on all charts
+Responsive design
+Libraries and Tools Used
+Frontend:
+Next.js (14.2.10)
+React
+Chart.js
+ApexCharts
+Tailwind CSS
+Backend:
+Django
+Django REST Framework
 
-- Line Chart, Bar Chart, Pie Chart (via Chart.js)
-- Candlestick Chart (via ApexCharts)
-- Dark mode toggle
-- Tooltips and hover effects on all charts
-- Responsive design
+# Setup Instructions
 
-## Libraries and Tools Used
+## 1. Clone the Repositories
+You will need to clone both the frontend and backend repositories separately.
 
-### Frontend:
-- **Next.js** (14.2.10)
-- **React**
-- **Chart.js**
-- **ApexCharts**
-- **Tailwind CSS**
-
-### Backend:
-- **Django**
-- **Django REST Framework**
-
----
-
-## Setup Instructions
-
-### 1. Clone the Repositories
-
-First, clone the repository which contains both the frontend and backend directories:
-
+Clone the Frontend (Next.js):
 ```bash
 git clone https://github.com/yourusername/charts-dashboard.git
 cd charts-dashboard
 ```
+Clone the Backend (Django):
+```bash
+git clone https://github.com/yourusername/blockhouse.git
+cd blockhouse
+```
 
-### 2. Install Dependencies
-
+## 2. Install Dependencies
 Frontend (Next.js)
-Navigate to the frontend directory and install the necessary dependencies:
+Navigate to the frontend directory (charts-dashboard) and install the necessary dependencies:
 
 ```bash
-cd frontend
+cd charts-dashboard
 npm install
 ```
 
 Backend (Django)
-Navigate to the backend directory and install the necessary Python dependencies:
+Navigate to the backend directory (blockhouse) and install the necessary Python dependencies:
 
 ```bash
-cd backend
+cd blockhouse
 pip install -r requirements.txt
 ```
-### 3. Running the Application
 
+## 3. Running the Application
 Backend (Django)
 Start the Django server to serve the API data:
 
 ```bash
-Copy code
-cd backend
+cd blockhouse
 python manage.py runserver
 ```
 The API will be available at http://127.0.0.1:8000/.
 
-Frontend (Next.js)
+### Frontend (Next.js)
 Start the Next.js development server:
 
 ```bash
-cd frontend
+cd charts-dashboard
 npm run dev
 ```
 The frontend will be available at http://localhost:3000/.
 
-### 4. Dark Mode Toggle
+### Folder Structure
+Since the repositories are separate, the structure will be as follows:
 
+```bash
+Copy code
+charts-dashboard/        # GitHub repository for the frontend (Next.js)
+├── package.json
+├── pages/
+└── ...
+
+blockhouse/              # GitHub repository for the backend (Django)
+├── manage.py
+├── blockhouse/
+└── ...
+```
+## 4. Dark Mode Toggle
 The dark mode toggle button is located in the top-right corner of the dashboard. It switches between light and dark mode, adjusting background colors and text styles accordingly. The user's preference is saved in localStorage.
 
-### 5. Accessing the Dashboard
-
+## 5. Accessing the Dashboard
 Once both the frontend and backend servers are running, navigate to http://localhost:3000/ in your browser to view the charts dashboard.
 
 ## Thought Process and Approach
