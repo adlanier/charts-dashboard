@@ -74,17 +74,6 @@ npm run dev
 ```
 The frontend will be available at http://localhost:3000/.
 
-Folder Structure
-```bash
-charts-dashboard/
-├── frontend/      # Next.js frontend project
-│   ├── package.json
-│   └── ...
-├── backend/       # Django backend project
-│   ├── manage.py
-│   └── ...
-└── README.md      # This file
-```
 ### 4. Dark Mode Toggle
 
 The dark mode toggle button is located in the top-right corner of the dashboard. It switches between light and dark mode, adjusting background colors and text styles accordingly. The user's preference is saved in localStorage.
