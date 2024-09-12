@@ -3,21 +3,25 @@
 A responsive charts dashboard built using Next.js (frontend) and Django (backend API), featuring multiple chart types: Line Chart, Bar Chart, Pie Chart, and Candlestick Chart. The dashboard integrates with hardcoded data from a Django API and is fully customizable with a dark mode toggle.
 
 ## Features
-Line Chart, Bar Chart, Pie Chart (via Chart.js)
-Candlestick Chart (via ApexCharts)
-Dark mode toggle
-Tooltips and hover effects on all charts
-Responsive design
-Libraries and Tools Used
-Frontend:
-Next.js (14.2.10)
-React
-Chart.js
-ApexCharts
-Tailwind CSS
-Backend:
-Django
-Django REST Framework
+
+- Line Chart, Bar Chart, Pie Chart (via Chart.js)
+- Candlestick Chart (via ApexCharts)
+- Dark mode toggle
+- Tooltips and hover effects on all charts
+- Responsive design
+
+## Libraries and Tools Used
+
+### Frontend:
+- **Next.js** (14.2.10)
+- **React**
+- **Chart.js**
+- **ApexCharts**
+- **Tailwind CSS**
+
+### Backend:
+- **Django**
+- **Django REST Framework**
 
 # Setup Instructions
 
