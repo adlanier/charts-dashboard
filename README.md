@@ -34,47 +34,48 @@ First, clone the repository which contains both the frontend and backend directo
 ```bash
 git clone https://github.com/yourusername/charts-dashboard.git
 cd charts-dashboard
+```
 
 ### 2. Install Dependencies
 
 Frontend (Next.js)
 Navigate to the frontend directory and install the necessary dependencies:
 
-bash
-Copy code
+```bash
 cd frontend
 npm install
+```
+
 Backend (Django)
 Navigate to the backend directory and install the necessary Python dependencies:
 
-bash
-Copy code
+```bash
 cd backend
 pip install -r requirements.txt
-
+```
 ### 3. Running the Application
 
 Backend (Django)
 Start the Django server to serve the API data:
 
-bash
+```bash
 Copy code
 cd backend
 python manage.py runserver
+```
 The API will be available at http://127.0.0.1:8000/.
 
 Frontend (Next.js)
 Start the Next.js development server:
 
-bash
-Copy code
+```bash
 cd frontend
 npm run dev
+```
 The frontend will be available at http://localhost:3000/.
 
 Folder Structure
-bash
-Copy code
+```bash
 charts-dashboard/
 ├── frontend/      # Next.js frontend project
 │   ├── package.json
@@ -83,7 +84,7 @@ charts-dashboard/
 │   ├── manage.py
 │   └── ...
 └── README.md      # This file
-
+```
 ### 4. Dark Mode Toggle
 
 The dark mode toggle button is located in the top-right corner of the dashboard. It switches between light and dark mode, adjusting background colors and text styles accordingly. The user's preference is saved in localStorage.
